@@ -1,0 +1,228 @@
+/* Tagline */
+
+.title{
+    text-align: center;
+    padding: 100px 0px;
+}
+.title h1{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 3.5rem;
+    font-weight: 550;
+    padding: 50px 0px;
+    color: #d13400;
+}
+.title p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 20px;
+    color: black;
+}
+.title::before{
+    content: "";
+    background: url('https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    height: 593px;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+/* clients */
+
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+#clients {
+    padding: 60px 0;
+    
+}
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px;
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 160px;
+}
+
+#clients img {
+    transition: all 0.4s ease-in-out;
+}
+ 
+
+
+@media screen and (max-width:1440px) {
+    .clients::before{
+        content: "";
+        background: url('https://media.istockphoto.com/photos/marketing-segmentation-picture-id469202236?k=20&m=469202236&s=612x612&w=0&h=u42ew83Pm8BQNssSPFVdscRhnMsZ06s9t5jIV-8p_Z8=') center center/cover;
+        position: absolute;
+        left: 0px;
+        width: 100vw;
+        height: 500px;
+        z-index: -7;
+        opacity: 0.5;
+    }
+}
+@media screen and (max-width:1130px) {
+    #navbar{
+        padding: 18px 5px;
+        position: sticky;
+        top: 0px;
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        padding: 0px 15px;
+        font-size: 1.3rem;
+        color: gainsboro;
+    }
+    .title{
+        text-align: center;
+        padding: 60px 0px;
+    }
+    .title h1{
+        font-size: 2.8rem;
+        padding: 35px 0px;
+    }
+    .title p{
+        font-size: 1.05rem;
+        padding-top: 16px;
+    }
+    .title::before{
+        content: "";
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPLMEjSw-0eHK9Ok6rydr4PSvptLRTMnNbw&usqp=CAU') no-repeat center center/cover;
+        height: 460px;
+        width: 100vw;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -2;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .clients::before{
+        content: "";
+        background: url('https://media.istockphoto.com/photos/marketing-segmentation-picture-id469202236?k=20&m=469202236&s=612x612&w=0&h=u42ew83Pm8BQNssSPFVdscRhnMsZ06s9t5jIV-8p_Z8=') center center/cover;
+        position: absolute;
+        left: 0px;
+        width: 100vw;
+        height: 720px;
+        z-index: -7;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width:675px) {
+    #navbar{
+        padding: 18px 0px;
+        position: sticky;
+        top: 0px;
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        padding: 0px 5px;
+        font-size: 0.65rem;
+        color: gainsboro;
+    }
+    .title{
+        text-align: center;
+        padding: 80px 0px;
+    }
+    .title h1{
+        font-size: 2rem;
+        padding: 35px 0px;
+    }
+    .title p{
+        font-size: 1rem;
+        padding-top: 16px;
+    }
+    .title::before{
+        content: "";
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPLMEjSw-0eHK9Ok6rydr4PSvptLRTMnNbw&usqp=CAU') no-repeat center center/cover;
+        height: 500px;
+        width: 100vw;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -2;
+        opacity: 0.8;
+    }
+
+    .space{
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding: 10px 30px;
+    }
+    .bt{
+        position: absolute;
+        bottom: 10px;
+        left: 24%;
+    }
+    .card{
+        margin: 30px 10px;
+        z-index: -9;
+        width: 18rem;
+        height: 38rem;
+    }
+    .card img{
+        height: 280px;
+    }
+    .hds{
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+    .prs{
+        text-align: center;
+        padding: 5px;
+    }
+    @media screen and (max-width:480px) {
+        .clients::before{
+            content: "";
+            background: url('https://media.istockphoto.com/photos/marketing-segmentation-picture-id469202236?k=20&m=469202236&s=612x612&w=0&h=u42ew83Pm8BQNssSPFVdscRhnMsZ06s9t5jIV-8p_Z8=') center center/cover;
+            position: absolute;
+            left: 0px;
+            width: 100vw;
+            height: 1320px;
+            z-index: -7;
+            opacity: 0.5;
+        }
+    }
+}

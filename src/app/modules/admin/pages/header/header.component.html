@@ -1,0 +1,44 @@
+<!-- <p>header works!</p> -->
+<nav class="navbar navbar-expand-xl sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="cursor: pointer;">My Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="main">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul *ngFor="let a of prlist|category" class="dropdown-item" style="list-style: none;">
+                <li><a class="dropdown-item" routerLink="product-list/{{a}}">{{a}}</a></li>
+              </ul>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="product-list">Product List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="cart">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-info btn-lg mx-3" routerLink="../login">Logout</button>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
